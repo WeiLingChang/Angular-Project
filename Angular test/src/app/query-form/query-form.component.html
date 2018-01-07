@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Query Form</h2>
+  <form (ngSubmit)="onSubmit()" #queryForm="ngForm">
+    <div class="form-row">
+      <label class="col-md-2 col-form-label" for="name">Name</label>
+      <input [(ngModel)]="person.name" minlength="2" #name="ngModel" class="form-control" name="personname" id="personName" placeholder="Name"
+        required>
+      <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+        <div *ngIf="name.errors.required"> Name is required.</div>
+        <div *ngIf="name.errors.minlength"> Name must be at least 2 characters long.</div>
+        <div *ngIf="name.errors.forbiddenName">Name cannot be Bob.</div>
+      </div>
+      <label class="col-md-2 col-form-label" for="birthday">Birthday</label>
+      <input [(ngModel)]="person.birthday" name="birthday" class="form-control" id="birthday" placeholder="MM/dd/YYYY" required>
+      <label class="col-md-2 col-form-label" for="Age">Age</label>
+      <select type="text" class="form-control" id="Age" [(ngModel)]="person.age" name="age" required>
+        <option *ngFor="let age of ages" [value]="age">{{age}}</option>
+      </select>
+      <label class="col-md-2 col-form-label" for="habbit">Habbit</label>
+      <input [(ngModel)]="person.habbit" name="habbit" class="form-control" id="habbit" placeholder="Habbit">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" [disabled]="!queryForm.form.valid">Query</button>
+  </form>
+  <br>
+  <app-query-result></app-query-result>
+</div>

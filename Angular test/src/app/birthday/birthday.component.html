@@ -1,0 +1,9 @@
+<div>
+    <h1> {{ birthday | date:format | uppercase}}</h1>
+    <button (click)="changeFormat()"> change format</button>
+</div>
+<div (mouseenter)="enter()" (mouseleave)="leave()" style="height:300px;width:300px;background-color:black ">
+    TEST
+</div>
+
+{{message}}

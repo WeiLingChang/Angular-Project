@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "vin": "Car1",
+            "year": 1991,
+            "brand": "BMW",
+            "color": "Red"
+        },
+        {
+            "vin": "Car2",
+            "year": 2005,
+            "brand": "VOVO",
+            "color": "Blue"
+        },
+        {
+            "vin": "Car3",
+            "year": 2007,
+            "brand": "Mercedes",
+            "color": "Black"
+        },
+        {
+            "vin": "Car4",
+            "year": 2015,
+            "brand": "Marzda",
+            "color": "Gray"
+        },
+        {
+            "vin": "Car5",
+            "year": 2013,
+            "brand": "Honda",
+            "color": "Green"
+        },
+        {
+            "vin": "Car6",
+            "year": 2018,
+            "brand": "Toyota",
+            "color": "Black"
+        },
+        {
+            "vin": "Car7",
+            "year": 2016,
+            "brand": "Nison",
+            "color": "Orange"
+        },
+        {
+            "vin": "Car8",
+            "year": 2017,
+            "brand": "BMW",
+            "color": "Pink"
+        }
+    ]
+}
