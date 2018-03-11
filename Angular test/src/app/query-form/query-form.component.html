@@ -20,6 +20,14 @@
       <input [(ngModel)]="person.habbit" name="habbit" class="form-control" id="habbit" placeholder="Habbit">
     </div>
     <br>
+    <span [ngSwitch]="person.age"> Person age:
+      <span *ngSwitchCase="'20'">20</span>
+      <span *ngSwitchCase="'21'">21</span>
+      <span *ngSwitchCase="'22'">22</span>
+      <span *ngSwitchCase="'23'">23</span>
+      <span *ngSwitchDefault>Other</span>
+    </span>
+    <br>
     <button type="submit" class="btn btn-primary" [disabled]="!queryForm.form.valid">Query</button>
   </form>
   <br>
