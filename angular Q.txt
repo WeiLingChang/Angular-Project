@@ -1,0 +1,5 @@
+20180311
+2_angular template
+P22, 23, 31,34,36,40
+ngswitch
+ngclass : customize class?
