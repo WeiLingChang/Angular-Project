@@ -1,0 +1,34 @@
+<form (ngSubmit)="onSubmit()" #queryForm="ngForm">
+  <div>
+    <label>Name</label>
+    <br>
+    <input class="form-control" [(ngModel)]="criteria.name" #name="ngModel" name="Name">
+  </div>
+  <br>
+  <div>
+    <label>Age</label>
+    <br>
+    <input class="form-control" [(ngModel)]="criteria.age" #name="ngModel" name="Age">
+  </div>
+  <br>
+  <div>
+    <label>Gender</label>
+    <div class="radio" *ngFor="let gender of genders">
+      <label>
+        <input type="radio" name="gender" [(ngModel)]="criteria.gender" [value]=gender.value>{{gender.display}}
+      </label>
+    </div>
+  </div>
+  <br>
+  <div>
+    <label>Role</label>
+    <div>
+      <select type="text" class="form-control" id="role" [(ngModel)]="criteria.role" name="role">
+        <option *ngFor="let role of roles" [value]="role.value">{{role.display}}</option>
+      </select>
+    </div>
+  </div>
+
+
+
+</form>

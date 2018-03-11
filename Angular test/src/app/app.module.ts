@@ -28,6 +28,7 @@ import { DirectiveDemoComponent } from './directive-demo/directive-demo.componen
 import { BsbtnDirective } from './directive-demo/bsbtn.directive';
 import { QueryResultComponent } from './query-result/query-result.component';
 import { CarService } from './service/car.service';
+import { QueryForm2Component } from './query-form2/query-form2.component';
 
 
 
@@ -62,7 +63,8 @@ import { CarService } from './service/car.service';
     QueryFormComponent,
     DirectiveDemoComponent,
     BsbtnDirective,
-    QueryResultComponent
+    QueryResultComponent,
+    QueryForm2Component
   ],
   providers: [HeroService, MessageService, CarService],
   bootstrap: [AppComponent]
